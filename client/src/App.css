@@ -1,0 +1,456 @@
+
+
+.carousel-item{
+  height:900px;
+}
+
+.carousel-image-1{
+  background:url('./img/img2.jpg');
+  background-size:cover;
+}
+
+.carousel-image-2{
+  background:url('./img/img1.jpg');
+  background-size:cover;
+}
+
+.carousel-image-3{
+  background:url('./img/img3.jpg');
+  background-size:cover;
+}
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+
+#dash{
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  min-height: 900px;
+  margin-top: 0;
+}
+
+#ale{
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.navbar {
+  border-bottom: #5cb85c 3px solid;
+  opacity: 0.8; }
+
+#reser{
+  margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .section {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  #booking {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .booking-form {
+    position: relative;
+    max-width: 642px;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    overflow: hidden;
+    background-image: url('./img/back.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 20;
+  }
+  
+  .booking-form::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  .booking-form .form-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .booking-form .form-header h1 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 42px;
+    margin: 0px;
+    color: #fff;
+  }
+  
+  .booking-form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .booking-form .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 60px;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 0px 2px transparent;
+    box-shadow: 0px 0px 0px 2px transparent;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .booking-form .form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .booking-form .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .booking-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .booking-form .form-control:focus {
+    -webkit-box-shadow: 0px 0px 0px 2px #ff8846;
+    box-shadow: 0px 0px 0px 2px #ff8846;
+  }
+  
+  .booking-form input[type="date"].form-control {
+    padding-top: 16px;
+  }
+  
+  .booking-form input[type="date"].form-control:invalid {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .booking-form input[type="date"].form-control+.form-label {
+    opacity: 1;
+    top: 10px;
+  }
+  
+  .booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .booking-form select.form-control:invalid {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+  }
+  
+  .booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .booking-form select.form-control option {
+    color: #000;
+  }
+  
+  .booking-form .form-label {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    opacity: 0;
+    color: #ff8846;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    height: 15px;
+    line-height: 15px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .booking-form .form-group.input-not-empty .form-control {
+    padding-top: 16px;
+  }
+  
+  .booking-form .form-group.input-not-empty .form-label {
+    opacity: 1;
+    top: 10px;
+  }
+  
+  .booking-form .submit-btn {
+    color: #fff;
+    background-color: #e35e0a;
+    font-weight: 700;
+    height: 60px;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .booking-form .submit-btn:hover,
+  .booking-form .submit-btn:focus {
+    opacity: 0.9;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    font-family: "Karla", sans-serif;
+    background-color: #fff;
+    min-height: 100vh; }
+  
+  .brand-wrapper {
+    padding-top: 7px;
+    padding-bottom: 8px; }
+    .brand-wrapper .logo {
+      height: 25px; }
+  
+  .login-section-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 68px 100px;
+    background-color: #fff; }
+    @media (max-width: 991px) {
+      .login-section-wrapper {
+        padding-left: 50px;
+        padding-right: 50px; } }
+    @media (max-width: 575px) {
+      .login-section-wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 100vh; } }
+  
+  .login-wrapper {
+    width: 300px;
+    max-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px; }
+    @media (max-width: 575px) {
+      .login-wrapper {
+        width: 100%; } }
+    .login-wrapper label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #b0adad; }
+    .login-wrapper .form-control {
+      border: none;
+      border-bottom: 1px solid #e7e7e7;
+      border-radius: 0;
+      padding: 9px 5px;
+      min-height: 40px;
+      font-size: 18px;
+      font-weight: normal; }
+      .login-wrapper .form-control::-webkit-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::-moz-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control:-ms-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::-ms-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::placeholder {
+        color: #b0adad; }
+    .login-wrapper .login-btn {
+      padding: 13px 20px;
+      background-color: #fdbb28;
+      border-radius: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 14px; }
+      .login-wrapper .login-btn:hover {
+        border: 1px solid #fdbb28;
+        background-color: #fff;
+        color: #fdbb28; }
+    .login-wrapper a.forgot-password-link {
+      color: #080808;
+      font-size: 14px;
+      text-decoration: underline;
+      display: inline-block;
+      margin-bottom: 54px; }
+      @media (max-width: 575px) {
+        .login-wrapper a.forgot-password-link {
+          margin-bottom: 16px; } }
+    .login-wrapper-footer-text {
+      font-size: 16px;
+      color: #000;
+      margin-bottom: 0; }
+  
+  .login-title {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px; }
+  
+  .login-img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .brand-wrapper {
+    margin-bottom: 19px; }
+    .brand-wrapper .logo {
+      height: 37px; }
+  
+  .login-card {
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    overflow: hidden; }
+    .login-card-img {
+      border-radius: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .login-card .card-body {
+      padding: 85px 60px 60px; }
+      @media (max-width: 422px) {
+        .login-card .card-body {
+          padding: 35px 24px; } }
+    .login-card-description {
+      font-size: 25px;
+      color: #000;
+      font-weight: normal;
+      margin-bottom: 23px; }
+    .login-card form {
+      max-width: 326px; }
+    .login-card .form-control {
+      border: 1px solid #d5dae2;
+      padding: 15px 25px;
+      margin-bottom: 20px;
+      min-height: 45px;
+      font-size: 13px;
+      line-height: 15;
+      font-weight: normal; }
+      .login-card .form-control::-webkit-input-placeholder {
+        color: #919aa3; }
+      .login-card .form-control::-moz-placeholder {
+        color: #919aa3; }
+      .login-card .form-control:-ms-input-placeholder {
+        color: #919aa3; }
+      .login-card .form-control::-ms-input-placeholder {
+        color: #919aa3; }
+      .login-card .form-control::placeholder {
+        color: #919aa3; }
+    .login-card .login-btn {
+      padding: 13px 20px 12px;
+      background-color: #000;
+      border-radius: 4px;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 24px; }
+      .login-card .login-btn:hover {
+        border: 1px solid #000;
+        background-color: transparent;
+        color: #000; }
+    .login-card .forgot-password-link {
+      font-size: 14px;
+      color: #919aa3;
+      margin-bottom: 12px; }
+    .login-card-footer-text {
+      font-size: 16px;
+      color: #0d2366;
+      margin-bottom: 60px; }
+      @media (max-width: 767px) {
+        .login-card-footer-text {
+          margin-bottom: 24px; } }
+    .login-card-footer-nav a {
+      font-size: 14px;
+      color: #919aa3; }
+
+
+
